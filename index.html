@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
     <head>   <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -9,13 +9,14 @@
         
         <style>
             body{
-              background-image: url(backimg2.jpg);
+              background-image: url(backimg5.webp);
             }
             a{
                 font-size: large;
             }
             h2{
-                color: gainsboro;
+              background-color: antiquewhite;
+                color:darkgreen;
                 text-align: center;
                 font-family: Arial, Helvetica, sans-serif;
             }
@@ -98,6 +99,32 @@ h3{
   font-family: Arial, Helvetica, sans-serif;
   color: aqua;
 }
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
 </style>
 
     </head>
@@ -142,12 +169,18 @@ h3{
             </div>
             
             <div class="mySlides">
-            <h3>WASH HAND FREQUENTLY WITH SOAP<br><br>Put on the mask when going out</h3>
+            <h3>WASH HAND FREQUENTLY WITH SOAP</h3>
             </div>
             
             <div class="mySlides">
-            <h3>WE NEED TO PRACTICE SOCIAL DISTANCE<br><br>Avoid touching eyes, noise, mouth</h3>
+            <h3>WE NEED TO PRACTICE SOCIAL DISTANCE</h3>
             </div>
+            <div class="mySlides">
+              <h3>Put on the mask when going out</h3>
+              </div>
+              <div class="mySlides">
+                <h3>Avoid touching eyes, noise, mouth</h3>
+                </div>
             
             <a class="prev" onclick="plusSlides(-1)"></a>
             <a class="next" onclick="plusSlides(1)"></a>
@@ -158,11 +191,31 @@ h3{
               <span class="dot" onclick="currentSlide(1)"></span> 
               <span class="dot" onclick="currentSlide(2)"></span> 
               <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
             </div>
             
            
             
+            <h4 style="text-align: center;">Registation form</h4>
+            <div style="  border-radius: 5px;background-color: #f2f2f2;padding: 20px;">
+              <form action="form.php" method="post" enctype="text/plain">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control" name="name" placeholder="Your name..">
             
+                <label for="email">E mail</label>
+                <input type="email" id="email" class="form-control" name="email" placeholder="Your email..">
+            
+                <label for="ref">reference</label>
+                <select id="ref" class="form-control" name="ref">
+                  <option value="javith">Javith</option>
+                  <option value="nuhman">Nuhman</option>
+                 
+                </select>
+              
+                <input type="submit" class="form-control submit" value="send">
+              </form>
+            </div>
          
           <h4>Computer science guides</h4><br>
          <ul>
